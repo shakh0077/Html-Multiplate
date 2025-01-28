@@ -95,6 +95,7 @@ footer{
     border-radius: 10px;
     color: white;
     margin:20px 0;
+    width: 200px;
 }
 
 .container{
@@ -172,7 +173,7 @@ button:hover {
 
 @media (max-width: 400px){
     body{
-        width: 320px; 
+        width: 375px; 
     }
 
     /* home style */
@@ -246,6 +247,7 @@ button:hover {
         color: white;
         margin-left: 80px;
         margin-top: 20px;
+        width: 200px;
     }
     .aboutBtn:hover{
         padding: 10px 30px; 
@@ -278,9 +280,13 @@ button:hover {
         text-align: justify;
     }
 
+    .ab-text em{
+        color: white;
+    }
+
     /* servise style */
     .ser-img{
-        width: 310px;
+        width: 340px;
         height: 150px;
     }
     .servise1{
