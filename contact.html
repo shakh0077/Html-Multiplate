@@ -10,12 +10,13 @@
     <meta property="og:description" content="Sahifaning qisqacha tavsifi.">
     <meta property="og:image" content="https://sahifangiz.com/rasm.jpg">
     <meta property="og:url" content="https://sahifangiz.com">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <header>
         <h1>Oybek.Com</h1>
         <nav>
-            <ul>
+            <ul class="navbar">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./servise.html">Servise</a></li>
@@ -23,46 +24,30 @@
             </ul>
         </nav>
     </header>
-
     <main>
-        <section id="page">
-            <ul>
-                <li><em>Projects</em></li>
-                <p>HTML Only Portfolio</p>
-                <p>Calculator</p>
-                <p>Quiz App</p>
-                <p>Countdown Timer</p>
-                <p>Product Upcoming Page</p>
-
-                <li><em>Work Experience</em></li>
-                <p>Roadmap.sh</p>
-                <p>Solved all the frontend projects.</p>
-                <a href="index.html">Visit my Profile</a>
-
-                <li><em>OpenSource Work</em></li>
-                <p>Contributed to 50 opensource projects.</p>
-                <p>Made my own projects with 200 GitHub Stars.</p>
-                <a href="index.html">Visit my GitHub Profile</a>
-
-                <li><em>Education</em></li>
-                <p>Graduated with 3.75 out of 4 CGPA. Won Acme Hackathon.</p>
-                <p>Organized 30 sessions</p>
-
-               
+        <div class="contact-container">
+            <h2>Aloqa Formasi</h2>
+            <form action="/send-message" method="POST">
+                <label for="name">Ismingiz:</label>
+                <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
     
-                    <ul>
-                        <li> <em>Courses I took:</em> </li>
-                        <li>Object Oriented Programming</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li> Web Engineering </li>
-                        <li>Artificial Intelligence</li>
-                        <li>Human Computer Interaction </li>
-                        <li>Computer Graphics</li>
-                        <li>O Distributed Database Systems</li>
-                        <li>Object Oriented Programming</li>
-                    </ul>
-            </ul>
-        </section>
+                <label for="email">Email manzilingiz:</label>
+                <input type="email" id="email" name="email" placeholder="Email manzilingizni kiriting" required>
+    
+                <label for="phone">Telefon raqamingiz:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon raqamni kiriting" pattern="^[0-9]{9,15}$">
+    
+                <label for="message">Xabaringiz:</label>
+                <textarea id="message" name="message" placeholder="Xabaringizni kiriting" rows="6" required></textarea>
+    
+                <button type="submit">Yuborish</button>
+            </form>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2025 Sizning Imkoniyatlaringiz Kafolatlanadi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </main>
 
 
 </body>
